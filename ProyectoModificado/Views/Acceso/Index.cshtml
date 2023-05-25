@@ -1,0 +1,53 @@
+﻿@model Usuario
+@{
+    Layout = "~/Views/Shared/LayoutLogin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <!--<div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+               
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+                
+            </div>-->
+
+            <div class="contenedor__login-register" style="margin-left: 200px;">
+                <form asp-asp-controller="Acceso" asp-action="Index" method="post" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" id="cor" placeholder="Correo Electronico"  asp-for="umail" required/>
+                    <input type="password" id="pas"  placeholder="Contraseña" asp-for="upass" required/>
+                    <button type="submit">Entrar</button>
+                </form>
+                <!--
+                <form
+                      method="POST"
+                      class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" id="unom" name="nombre" placeholder="Nombre completo" value="Model.regisUs.uname" require />
+                    <input type="text" id="umail" name="correo" placeholder="Correo Electronico" value="Model.regisUs.umail" require />
+                    <input type="password" id="upass" name="contraseña" placeholder="Contraseña" value="Model.regisUs.upass" require />
+                        
+                </form>
+                 -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

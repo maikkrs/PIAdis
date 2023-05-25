@@ -1,0 +1,39 @@
+﻿@model List<ClientesModels>
+
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de clientes</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre(s)</th>
+            <th>Appelido paterno</th>
+            <th>Apellido Materno</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model)
+        {
+            <tr class="gp">
+                <td class="id">@prod.Id.ToString()</td>
+                <td class="nom">@prod.Nombre</td>
+                <td class="desc">@prod.ApellidoP</td>
+                <td class="precio">@prod.ApellidoM</td>
+                <td class="stock">@prod.Tel</td>
+                <td>
+                    <a asp-action="Editar" asp-asp-controller="Clientes" class="btn btn-editar" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                    <a asp-action="Eliminar" asp-asp-controller="Clientes" class="btn btn-danger" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<a asp-action="Guardar" asp-asp-controller="Clientes" class="btn btn-agregar">Agregar producto</a>
+

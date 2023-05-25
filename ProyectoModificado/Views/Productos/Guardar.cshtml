@@ -1,0 +1,40 @@
+﻿@model Productos
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="holder">
+    <div class="form-group">
+        <h2 class="formulario-titulo">Agregar/Editar producto</h2>
+
+        <form asp-action="Guardar" asp-controller="Productos" method="post">
+            <div class="formulario-campos">
+                <div class="formulario-campo">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" asp-for="Nombre" class="form-control" placeholder="Ingresar nombre" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="desc">Descripción:</label>
+                    <input type="text" id="desc" asp-for="Descripcion" class="form-control" placeholder="Ingresar descripción" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" asp-for="Precio" class="form-control" placeholder="Ingresar precio" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" asp-for="Stock" class="form-control" placeholder="Ingresar stock" required>
+                </div>
+            </div>
+            <div class="formulario-botones">
+                <input type="number" id="eid" asp-for="Id" class="form-control" placeholder="ID" readonly style="width: 10%;">
+                <button type="submit" class="btn btn-guardar btn-primary">Guardar</button>
+                <a asp-action="Listar" asp-controller="Productos" class="btn btn-cancelar btn-danger">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
