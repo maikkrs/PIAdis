@@ -17,7 +17,7 @@ namespace ProyectoModificado.Datos
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT correo,contraseña from usuarios where correo='" + correo + "'";
+                    string sql = "SELECT usuario,contraseña from usuarios where usuario='" + correo + "'";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())

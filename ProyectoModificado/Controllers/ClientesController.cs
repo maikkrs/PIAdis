@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProyectoModificado.Models;
 using System.Diagnostics;
+using ProyectoModificado.Models.Union;
 
 using Microsoft.AspNetCore.Authorization;
 using ProyectoModificado.Datos;
@@ -12,11 +13,24 @@ namespace ProyectoModificado.Controllers
     {
 
         ClientesDatos _ClientesDatos = new ClientesDatos();
-        public IActionResult Listar()
+
+        
+        public IActionResult Listar(string x, string y, string z)
         {
-            var oLista = _ClientesDatos.Listar();
-            return View(oLista);
+
+            Class2 c = new Class2();
+            c.c1 = _ClientesDatos.Listar();
+            c.c2 = _ClientesDatos.Buscar(x, y, z);
+            return View(c);
         }
+
+
+        public IActionResult Buscar(string a, string b, string c)
+        {
+            var oproducto = _ClientesDatos.Buscar(a, b, c);
+            return Listar(a, b, c); 
+        }
+
 
         public IActionResult Guardar()
         {

@@ -1,38 +1,73 @@
-﻿@model List<Productos>
+﻿@model ProyectoModificado.Models.Union.Class
 @{
     ViewData["Title"] = "Listar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1>Inventario de productos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>En stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var prod in Model.p1)
+                    {
+                        <tr class="gp">
+                            <td class="id">@prod.Id.ToString()</td>
+                            <td class="nom">@prod.Nombre</td>
+                            <td class="desc">@prod.Descripcion</td>
+                            <td class="precio">$@prod.Precio.ToString()</td>
+                            <td class="stock">@prod.Stock.ToString()</td>
+                            <td>
+                                <a asp-action="Editar" asp-asp-controller="Productos" class="btn btn-editar" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                                <a asp-action="Eliminar" asp-asp-controller="Productos" class="btn btn-danger" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                            </td>
+                        </tr>
+                    }
 
-<h1>Inventario de productos</h1>
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-            <th>Stock</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var prod in Model)
-        {
-            <tr class="gp">
-                <td class="id">@prod.Id.ToString()</td>
-                <td class="nom">@prod.Nombre</td>
-                <td class="desc">@prod.Descripcion</td>
-                <td class="precio">$@prod.Precio.ToString()</td>
-                <td class="stock">@prod.Stock.ToString()</td>
-                <td>
-                    <a asp-action="Editar" asp-asp-controller="Productos" class="btn btn-editar" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
-                    <a asp-action="Eliminar" asp-asp-controller="Productos" class="btn btn-danger" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
-                </td>
-            </tr>
-        }
+                </tbody>
+            </table>
+            <a asp-action="Guardar" asp-asp-controller="Productos" class="btn btn-agregar">Agregar producto</a>
+        </div>
+        <div class="col">
+            <h1>Inventario bajo</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>En stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var falt in Model.p2)
+                    {
+                        <tr class="gp">
+                            <td class="id">@falt.Id2.ToString()</td>
+                            <td class="nom">@falt.Nombre2</td>
+                            <td class="desc">@falt.Descripcion2</td>
+                            <td class="precio">$@falt.Precio2.ToString()</td>
+                            <td class="stock">@falt.Stock2.ToString()</td>
 
-    </tbody>
-</table>
-<a asp-action="Guardar" asp-asp-controller="Productos" class="btn btn-agregar">Agregar producto</a>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

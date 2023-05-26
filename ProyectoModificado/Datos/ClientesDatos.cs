@@ -41,6 +41,82 @@ namespace ProyectoModificado.Datos
             }
             return oLista;
         }
+
+        
+        public List<ClientesBuscarModels> Buscar(string nom, string ap, string am)
+        {
+            var oLista = new List<ClientesBuscarModels>();
+
+            var cn = new Conexion();
+
+            using (var conexion = new SqlConnection(cn.getCadenaSQL()))
+            {
+                conexion.Open();
+                if (nom == null && ap == null && am == null)
+                {
+                    am = "x";
+
+                    ap = "x";
+
+                    nom = "x";
+                }
+                else
+                {
+                    if (nom == null)
+                    {
+                        nom = "NULL";
+                    }
+                    else
+                    {
+                        nom = "'" + nom + "'";
+                    }
+                    if (ap == null)
+                    {
+                        ap = "NULL";
+                    }
+                    else
+                    {
+                        ap = "'" + ap + "'";
+                    }
+                    if (am == null)
+                    {
+                        am = "NULL";
+                    }
+                    else
+                    {
+                        am = "'" + am + "'";
+                    }
+                }
+
+                
+
+
+                string sql = "EXEC BuscarCliente @Nombre = " + nom + ", @ApellidoPaterno = " + ap + ", @ApellidoMaterno = " + am + ";";
+                SqlCommand cmd = new SqlCommand(sql, conexion);
+                cmd.CommandType = CommandType.Text;
+
+
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        oLista.Add(new ClientesBuscarModels
+                        {
+                            Idb2 = dr.GetInt32(0),
+                            Nombreb2 = dr.GetString(1),
+                            ApellidoPb2 = dr.GetString(2),
+                            ApellidoMb2 = dr.GetString(3),
+                            Telb2 = dr.GetString(4)
+
+                        });
+                    }
+                }
+
+            }
+            return oLista;
+        }
+
+
         public ClientesModels Obtener(int idContacto)
         {
             var oProducto = new ClientesModels();

@@ -1,39 +1,104 @@
-﻿@model List<ClientesModels>
+﻿
+@model ProyectoModificado.Models.Union.Class2
+
 
 @{
     ViewData["Title"] = "Listar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Lista de clientes</h1>
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre(s)</th>
-            <th>Appelido paterno</th>
-            <th>Apellido Materno</th>
-            <th>Teléfono</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var prod in Model)
-        {
-            <tr class="gp">
-                <td class="id">@prod.Id.ToString()</td>
-                <td class="nom">@prod.Nombre</td>
-                <td class="desc">@prod.ApellidoP</td>
-                <td class="precio">@prod.ApellidoM</td>
-                <td class="stock">@prod.Tel</td>
-                <td>
-                    <a asp-action="Editar" asp-asp-controller="Clientes" class="btn btn-editar" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
-                    <a asp-action="Eliminar" asp-asp-controller="Clientes" class="btn btn-danger" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
-                </td>
-            </tr>
-        }
 
-    </tbody>
-</table>
-<a asp-action="Guardar" asp-asp-controller="Clientes" class="btn btn-agregar">Agregar producto</a>
+
+
+
+
+<div class='row'>
+  <div class="col-md-6 cargacli">
+        <h1>Lista de clientes</h1>
+        <table class="cli">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre(s)</th>
+                    <th>Appelido paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var prod in Model.c1)
+                {
+                    <tr class="gp">
+                        <td class="id">@prod.Id.ToString()</td>
+                        <td class="nom">@prod.Nombre</td>
+                        <td class="desc">@prod.ApellidoP</td>
+                        <td class="precio">@prod.ApellidoM</td>
+                        <td class="stock">@prod.Tel</td>
+                        <td>
+                            <a asp-action="Editar" asp-asp-controller="Clientes" class="btn btn-editar" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                            <a asp-action="Eliminar" asp-asp-controller="Clientes" class="btn btn-danger" asp-route-idProducto="@prod.Id"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <a asp-action="Guardar" asp-asp-controller="Clientes" class="btn btn-agregar">Agregar cliente</a>
+  </div>
+  <div class="col-md-6">
+    <div class='row'>
+      <div class="col-md-12">
+                <div class="buscacli">
+
+                    <h1>Búsqueda de clientes</h1>
+                    @using (Html.BeginForm("Listar", "Clientes"))
+                    {
+                        <label for="nombre">Nombre:</label>
+                        @Html.TextBox("x", null, new {@class = "form-control"})
+                        <label for="nombre">Apellido Paterno:</label>
+                        @Html.TextBox("y", null, new {@class = "form-control"})
+                        <label for="nombre">Apellido Materno:</label>
+                        @Html.TextBox("z", null, new {@class = "form-control"})
+                        <input type="submit" value="Buscar clientEEES" class="btn btn-agregar" />
+
+                    }
+                </div>
+      </div>
+      <div class="col-md-12 tablabus">
+
+                <table class="carga">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre(s)</th>
+                            <th>Appelido paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Teléfono</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var prod in Model.c2)
+                        {
+                            <tr class="gp">
+                                <td class="id">@prod.Idb2.ToString()</td>
+                                <td class="nom">@prod.Nombreb2</td>
+                                <td class="desc">@prod.ApellidoPb2</td>
+                                <td class="precio">@prod.ApellidoMb2</td>
+                                <td class="stock">@prod.Telb2</td>
+                                <td>
+                                    <a asp-action="Editar" asp-controller="Clientes" class="btn btn-editar" asp-route-idProducto="@prod.Idb2"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                                    <a asp-action="Eliminar" asp-controller="Clientes" class="btn btn-danger" asp-route-idProducto="@prod.Idb2"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+      </div>
+    </div>
+  </div>
+</div>
+
 
