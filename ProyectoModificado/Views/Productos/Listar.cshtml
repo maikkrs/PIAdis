@@ -1,4 +1,4 @@
-﻿@model List<Productos>
+﻿@model ProyectoModificado.Models.Union.Class
 @{
     ViewData["Title"] = "Listar";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -18,7 +18,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var prod in Model)
+        @foreach (var prod in Model.p1)
         {
             <tr class="gp">
                 <td class="id">@prod.Id.ToString()</td>
@@ -36,3 +36,30 @@
     </tbody>
 </table>
 <a asp-action="Guardar" asp-asp-controller="Productos" class="btn btn-agregar">Agregar producto</a>
+
+<h1>Inventario de productos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var falt in Model.p2)
+        {
+            <tr class="gp">
+                <td class="id">@falt.Id2.ToString()</td>
+                <td class="nom">@falt.Nombre2</td>
+                <td class="desc">@falt.Descripcion2</td>
+                <td class="precio">$@falt.Precio2.ToString()</td>
+                <td class="stock">@falt.Stock2.ToString()</td>
+               
+            </tr>
+        }
+
+    </tbody>
+</table>

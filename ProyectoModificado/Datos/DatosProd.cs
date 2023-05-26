@@ -40,6 +40,40 @@ namespace ProyectoModificado.Datos
             }
             return oLista;
         }
+
+        public List<ProductosFaltaModels> ListarFaltante()
+        {
+            var oListaFalta = new List<ProductosFaltaModels>();
+
+            var cn = new Conexion();
+
+            using (var conexion = new SqlConnection(cn.getCadenaSQL()))
+            {
+                conexion.Open();
+                string sql = "SELECT * from Producto where stock < 10";
+                SqlCommand cmd = new SqlCommand(sql, conexion);
+                cmd.CommandType = CommandType.Text;
+
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        oListaFalta.Add(new ProductosFaltaModels
+                        {
+                            Id2 = dr.GetInt32(0),
+                            Nombre2 = dr.GetString(1),
+                            Descripcion2 = dr.GetString(2),
+                            Precio2 = dr.GetInt32(3),
+                            Stock2 = dr.GetInt32(4)
+
+                        });
+                    }
+                }
+
+            }
+            return oListaFalta;
+        }
+
         public Productos Obtener(int idContacto)
         {
             var oProducto = new Productos();

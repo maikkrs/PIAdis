@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using ProyectoModificado.Datos;
 using ProyectoModificado.Models;
+using ProyectoModificado.Models.Union;
 
 
 namespace ProyectoModificado.Controllers
@@ -11,10 +12,13 @@ namespace ProyectoModificado.Controllers
     public class ProductosController : Controller
     {
         DatosProd _DatosProd = new DatosProd();
-        public IActionResult Listar()
-        {
-            var oLista = _DatosProd.Listar();
-            return View(oLista);
+        public IActionResult Listar() {
+            
+           Class c = new Class();
+            c.p1 = _DatosProd.Listar();
+            c.p2 = _DatosProd.ListarFaltante();
+   
+            return View(c);
         }
 
         public IActionResult Guardar()
@@ -30,7 +34,7 @@ namespace ProyectoModificado.Controllers
             if (respuesta == true)
                 return RedirectToAction("Listar");
             else
-                return View("~/Views/Productos/ListarProductos.cshtml");
+                return View();
         }
 
         public IActionResult Editar(int idProducto)
