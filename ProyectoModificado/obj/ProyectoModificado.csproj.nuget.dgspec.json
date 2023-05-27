@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mike Rodríguez\\source\\repos\\mikeyRS02\\PIAdis\\ProyectoModificado\\ProyectoModificado.csproj": {}
+    "D:\\DiseñoProyeto\\ProyectoModificado\\ProyectoModificado\\ProyectoModificado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mike Rodríguez\\source\\repos\\mikeyRS02\\PIAdis\\ProyectoModificado\\ProyectoModificado.csproj": {
+    "D:\\DiseñoProyeto\\ProyectoModificado\\ProyectoModificado\\ProyectoModificado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mike Rodríguez\\source\\repos\\mikeyRS02\\PIAdis\\ProyectoModificado\\ProyectoModificado.csproj",
+        "projectUniqueName": "D:\\DiseñoProyeto\\ProyectoModificado\\ProyectoModificado\\ProyectoModificado.csproj",
         "projectName": "ProyectoModificado",
-        "projectPath": "C:\\Users\\Mike Rodríguez\\source\\repos\\mikeyRS02\\PIAdis\\ProyectoModificado\\ProyectoModificado.csproj",
-        "packagesPath": "C:\\Users\\Mike Rodríguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mike Rodríguez\\source\\repos\\mikeyRS02\\PIAdis\\ProyectoModificado\\obj\\",
+        "projectPath": "D:\\DiseñoProyeto\\ProyectoModificado\\ProyectoModificado\\ProyectoModificado.csproj",
+        "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
+        "outputPath": "D:\\DiseñoProyeto\\ProyectoModificado\\ProyectoModificado\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mike Rodríguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

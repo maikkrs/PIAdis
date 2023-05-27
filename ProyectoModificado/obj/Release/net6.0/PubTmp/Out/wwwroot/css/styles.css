@@ -7,9 +7,10 @@ body {
   }
   
   h1 {
-    font-size: 3em; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px; 
     text-align: center; 
-    color: #ff0000; 
+    color: black; 
 
   }
   
@@ -18,13 +19,20 @@ body {
     margin: 30px auto;
     border-collapse: collapse;
     width: fit-content;
-    max-height:400px;
+    max-height: 550px;
     overflow-y:scroll;
     max-width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-  
+  .cli{
+      width :max-content;
+  }
+.carga {
+    font-size:15px;
+    width: max-content;
+}
+
   th,td {
     padding: 10px;
     text-align: center;
@@ -51,7 +59,32 @@ body {
     color: #fff;
     margin-right: 5px;
   }
-  
+
+.busca {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.buscacli {
+    font-family: arial;
+    font-size: 18px;
+    padding-left: 10%;
+    margin: auto;
+    width:90%;
+    margin-top: 20%;
+}
+
+.tablabus {
+    padding-left:15%;
+}
+.cargacli{
+    padding-right:15%;
+}
   .btn-danger {
     background-color: #ff4500;
     color: #fff;
