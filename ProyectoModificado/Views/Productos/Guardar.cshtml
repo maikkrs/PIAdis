@@ -7,7 +7,7 @@
 
 <div class="holder">
     <div class="form-group">
-        <h2 class="formulario-titulo">Agregar/Editar producto</h2>
+        <h2 class="formulario-titulo">Agregar producto</h2>
 
         <form asp-action="Guardar" asp-controller="Productos" method="post">
             <div class="formulario-campos">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="formulario-botones">
-                <input type="number" id="eid" asp-for="Id" class="form-control" placeholder="ID" readonly style="width: 10%;">
+                <input type="number" id="eid" asp-for="Id" class="form-control" placeholder="ID" readonly style="width: 20%;">
                 <button type="submit" class="btn btn-guardar btn-primary">Guardar</button>
                 <a asp-action="Listar" asp-controller="Productos" class="btn btn-cancelar btn-danger">Cancelar</a>
             </div>

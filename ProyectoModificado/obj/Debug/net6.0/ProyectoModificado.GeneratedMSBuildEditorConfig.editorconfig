@@ -9,89 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoModificado
 build_property.RootNamespace = ProyectoModificado
-build_property.ProjectDir = D:\DiseñoProyeto\ProyectoModificado\ProyectoModificado\
+build_property.ProjectDir = C:\Users\Mike Rodríguez\Desktop\DiseñoGit\PIAdis\ProyectoModificado\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DiseñoProyeto\ProyectoModificado\ProyectoModificado
+build_property.MSBuildProjectDirectory = C:\Users\Mike Rodríguez\Desktop\DiseñoGit\PIAdis\ProyectoModificado
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Acceso/Index.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Acceso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Clientes/Editar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Clientes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Clientes/Eliminar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Clientes/Eliminar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWxpbWluYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Clientes/Guardar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Clientes/Guardar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcR3VhcmRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Clientes/Listar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Clientes/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Home/Clientes.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Home/Clientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGllbnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Home/Index.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Home/Privacy.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Home/Productos.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Home/Productos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Productos/Editar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Productos/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Productos/Eliminar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Productos/Eliminar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVsaW1pbmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Productos/Guardar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Productos/Guardar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEd1YXJkYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Productos/GuardarProd.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Productos/GuardarProd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEd1YXJkYXJQcm9kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Productos/Listar.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Productos/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXExpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Shared/Error.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/_ViewImports.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Usuarios/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Usuarios/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Usuarios/Guardar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcR3VhcmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Usuarios/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTGlzdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/_ViewStart.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Shared/LayoutLogin.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Shared/LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-yi1bcgvfcd
 
-[D:/DiseñoProyeto/ProyectoModificado/ProyectoModificado/Views/Shared/_Layout.cshtml]
+[C:/Users/Mike Rodríguez/Desktop/DiseñoGit/PIAdis/ProyectoModificado/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lydpef6tq1

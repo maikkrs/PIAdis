@@ -120,7 +120,7 @@ namespace ProyectoModificado.Datos
                                         "values (@name, @desc, @precio, @stock)";
                     SqlCommand cmd = new SqlCommand(sql, conexion);
                     cmd.Parameters.AddWithValue("@name", oProducto.Nombre);
-                    cmd.Parameters.AddWithValue("desc", oProducto.Descripcion);
+                    cmd.Parameters.AddWithValue("@desc", oProducto.Descripcion);
                     cmd.Parameters.AddWithValue("@precio",oProducto.Precio);
                     cmd.Parameters.AddWithValue("@stock", oProducto.Stock);
 
@@ -154,7 +154,7 @@ namespace ProyectoModificado.Datos
                                             "WHERE id = @id";
                     SqlCommand cmd = new SqlCommand(sql, conexion);
                     cmd.Parameters.AddWithValue("@name", oProducto.Nombre);
-                    cmd.Parameters.AddWithValue("desc", oProducto.Descripcion);
+                    cmd.Parameters.AddWithValue("@desc", oProducto.Descripcion);
                     cmd.Parameters.AddWithValue("@precio", oProducto.Precio);
                     cmd.Parameters.AddWithValue("@stock", oProducto.Stock);
                     cmd.Parameters.AddWithValue("@id", oProducto.Id);

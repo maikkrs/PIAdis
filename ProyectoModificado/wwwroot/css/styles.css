@@ -167,4 +167,8 @@ body {
   .formulario-botones button {
     margin-left: 10px;
   }
-  
+
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+﻿@model List<Usuario>
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+            <h1>Registro de administradores</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Acciones</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var prod in Model)
+                    {
+                        <tr class="gp">
+                            <td class="id">@prod.uid.ToString()</td>
+                            <td class="nom">@prod.umail</td>
+                            <td class="desc">@prod.upass</td>
+                            <td>
+                                <a asp-action="Editar" asp-asp-controller="Usuarios" class="btn btn-editar" asp-route-idProducto="@prod.uid"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                                <a asp-action="Eliminar" asp-asp-controller="Usuarios" class="btn btn-danger" asp-route-idProducto="@prod.uid"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+            <a asp-action="Guardar" asp-asp-controller="Usuarios" class="btn btn-agregar">Agregar usuario</a>
+</div>
+
+
