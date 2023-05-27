@@ -7,18 +7,17 @@
 
 <div class="holder">
     <div class="form-group">
-        <h2 class="formulario-titulo">Agregar producto</h2>
+        <h2 class="formulario-titulo">Agregar usuario</h2>
 
         <form asp-action="Guardar" asp-controller="Usuarios" method="post">
             <div class="formulario-campos">
                 <div class="formulario-campo">
                     <label for="desc">Usuario:</label>
-                    <input type="text" id="desc" asp-for="umail" class="form-control" placeholder="Ingresar descripción" required>
+                    <input type="text" id="desc" asp-for="umail" class="form-control" placeholder="Ingresar usuario" required>
                 </div>
                 <div class="formulario-campo">
                     <label for="precio">Contraseña (mínimo 8 caracteres):</label>
-                    <input type="password" id="password" asp-for="upass" class="form-control" minlength="8" placeholder="Ingresar precio" required>
-                    <i class="fa-sharp fa-solid fa-eye-slash" id="togglePassword" style="color: #464d58;"></i>
+                    <input type="password" id="pas" asp-for="upass" class="form-control" minlength="8" placeholder="Ingresar contraseña" required>
                 </div>
             </div>
             <div class="formulario-botones">

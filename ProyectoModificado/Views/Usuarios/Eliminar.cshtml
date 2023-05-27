@@ -4,21 +4,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@{
+    var x = Model.upass;
+    var y = Model.upass2;
+}
+
 <div class="holder">
     <div class="form-group">
-        <h2 class="formulario-titulo">Eliminar producto</h2>
+        <h2 class="formulario-titulo">Eliminar usuario</h2>
 
         <form asp-action="Eliminar" asp-controller="Usuarios" method="post">
-            <div class="formulario-campos botelim">
+            <div class="formulario-campos">
                 <div class="formulario-campo">
 
                     <div class="alert alert-danger eliminaral" role="alert">
-                        ¿Desea eliminar el producto: @Html.DisplayTextFor(m => m.umail) ?
+                        ¿Desea eliminar el usuario: @Html.DisplayTextFor(m => m.umail) ?
                     </div>
+                </div>
+                <div class="formulario-campo">
+                    <label for="precio">Ingrese contraseña actual:</label>
+                    <input type="password" id="precio" asp-for="upass" value="" class="form-control" placeholder="Ingresar contraseña" required>
+                    <label for="precio" style="color:red;">@y</label>
                 </div>
                 <div class="formulario-botones">
                     <input type="number" id="eid" asp-for="uid" class="form-control " placeholder="ID" readonly style="width: 20%;">
-                    <button type="submit" class="btn btn-guardar btn-primary">Eliminar</button>
+                    <button type="submit" asp-route-conActual="@x" class="btn btn-guardar btn-primary">Eliminar</button>
                     <a asp-action="Listar" asp-controller="Usuarios" class="btn btn-cancelar btn-danger">Cancelar</a>
                 </div>
             </div>

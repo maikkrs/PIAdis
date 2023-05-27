@@ -42,14 +42,26 @@ namespace ProyectoModificado.Controllers
         }
 
         [HttpPost]
-        public IActionResult Editar(Usuario oProductos)
+        public IActionResult Editar(Usuario oProductos, string conActual)
         {
-            var respuesta = _DatosProd.Editar(oProductos);
+            if (oProductos.upass2 == conActual)
+            {
+                var respuesta = _DatosProd.Editar(oProductos);
 
-            if (respuesta == true)
-                return RedirectToAction("Listar");
+                if (respuesta == true)
+                    return RedirectToAction("Listar");
+                else
+                    return View();
+            }
             else
-                return View();
+            {
+                oProductos.upass = conActual;
+                oProductos.upass2 = "Contraseña incorrecta";
+                return View(oProductos);
+            }
+
+           
+           
         }
 
         public IActionResult Eliminar(int idProducto)
@@ -59,14 +71,25 @@ namespace ProyectoModificado.Controllers
         }
 
         [HttpPost]
-        public IActionResult Eliminar(Usuario oProductos)
+        public IActionResult Eliminar(Usuario oProductos, string conActual)
         {
-            var respuesta = _DatosProd.Eliminar(oProductos.uid);
+            if (oProductos.upass==conActual)
+            {
+                var respuesta = _DatosProd.Eliminar(oProductos.uid);
 
-            if (respuesta == true)
-                return RedirectToAction("Listar");
+                if (respuesta == true)
+                    return RedirectToAction("Listar");
+                else
+                    return View();
+            }
             else
-                return View();
+            {
+                oProductos.upass = conActual;
+                oProductos.upass2 = "Contraseña incorrecta";
+                return View(oProductos);
+            }
+
+            
         }
 
 
